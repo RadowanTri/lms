@@ -297,19 +297,6 @@
     transition: 0.3s;
 }
 
-a.nav-link[aria-expanded="true"] .collapse,
-a.nav-link[aria-expanded="true"] .collapse.show {
-    background-color: #42DCA3;
-    font-size: 30px;
-    display: block !important;
-}
-
-.sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
-.sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-    color: #4e73df;
-    font-weight: 700;
-}
-
 
 /* annoucement */
 

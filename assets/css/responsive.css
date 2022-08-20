@@ -1,5 +1,33 @@
 /* Laptop */
 
+@media (min-width: 1192px) {
+    /* version 2 */
+    .add-more-btn,
+    .search-btn {
+        width: 150px;
+    }
+    .add-more-button .modal-dialog {
+        max-width: 1100px;
+    }
+    .add-more-button .modal {
+        left: 52%;
+        transform: translateX(-48%);
+        -webkit-transform: translateX(-48%);
+        -moz-transform: translateX(-48%);
+        -ms-transform: translateX(-48%);
+        -o-transform: translateX(-48%);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1440px) {
+    .max-width-40 {
+        max-width: 30rem;
+    }
+    .cariculam-c {
+        width: 15rem;
+    }
+}
+
 @media (max-width:1199px) {
     /* take-exam */
     .exam-ques.j-between {
@@ -16,9 +44,12 @@
 
 /* Normal (desktops, 992px and up) */
 
-@media (min-width: 992px) and (max-width: 1600px) {}
-
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* version 2 */
+    .add-more-button .modal-dialog {
+        max-width: 960px;
+    }
+}
 
 @media (min-width: 767px) and (max-width: 1199px) {
     .table-view-content {
@@ -30,7 +61,12 @@
     }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {}
+@media (min-width: 767px) and (max-width: 991px) {
+    /* version 2 */
+    .add-more-button .modal-dialog {
+        max-width: 760px;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 991px) {
     .table-view-content thead th {
@@ -113,6 +149,28 @@
     .search-entity {
         margin-top: 10px;
     }
+    /* version 2 */
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item,
+    .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+        padding: 0.3rem 0.3rem;
+        font-size: 13px;
+    }
+    .search-icon .f-control {
+        padding-right: 30px;
+        font-size: 13px;
+    }
+    .add-more-btn,
+    .search-btn {
+        width: 120px;
+        font-size: 13px;
+    }
+    .add-more-button .modal-dialog {
+        max-width: 576px;
+    }
+    .add-more-button {
+        text-align: center;
+        margin-top: 15px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -135,5 +193,10 @@
     }
     .mb-sm-10 {
         margin-bottom: 10px;
+    }
+    /* version 2 */
+    .add-more-btn,
+    .search-btn {
+        margin-left: 10px;
     }
 }
