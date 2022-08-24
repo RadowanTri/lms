@@ -2073,6 +2073,7 @@ form.user .btn-user {
     font-size: 14px;
     width: 130px;
     height: 40px;
+    line-height: 1.5;
     border-radius: 5px;
     color: var(--white-text);
     padding: 3px 7px;
@@ -2245,4 +2246,21 @@ form.user .btn-user {
 .pagination-wrapper .page-item:first-child .page-link {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.modal-body .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.modal-body .course-form {
+    margin-bottom: 10px;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
