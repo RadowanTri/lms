@@ -306,3 +306,29 @@
 .table-view-content tr {
     border-width: 1px;
 }
+
+
+/* course-details */
+
+.course-details {
+    padding: 25px 20px;
+}
+
+.course-details .course-test-r ul li {
+    display: inline-block;
+    padding-right: 20px;
+    margin: 15px 0px;
+}
+
+.course-details .course-test-q li {
+    margin-bottom: 15px;
+}
+
+.course-details .course-test-q li .test-title {
+    float: left;
+    margin-right: 15px;
+}
+
+.course-details .course-test-q li .test-des {
+    overflow: hidden;
+}
