@@ -28,27 +28,15 @@ $(document).ready(function($) {
     });
 
 
-    // video popup
-    $('.video-icon').magnificPopup({
-        type: 'iframe',
-        iframe: {
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/',
 
-                    id: 'v=',
-                    src: 'http://www.youtube.com/embed/%id%?autoplay=1'
-                }
-
-            },
-            srcAction: 'iframe_src',
-        }
-    });
 
     $('.dropdown-toggle').dropdown()
 
     var myCollapsible = document.getElementById('myCollapsible')
     myCollapsible.addEventListener('hidden.bs.collapse', function() {
-        // do something...
-    })
+            // do something...
+        })
+        //  Class History 
+
+    $('.js-example-basic-multiple').select2();
 }(jQuery));
