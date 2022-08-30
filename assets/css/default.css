@@ -34,10 +34,6 @@ Last change:    24/08/21 [fixed Float bug, vf]
     --white-text: #fff;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-size: 15px;
     line-height: 1.5;
@@ -45,6 +41,7 @@ body {
     color: #2D3735;
     background: #F7F8FA;
     height: 100%;
+    overflow-y: scroll;
 }
 
 h1,
@@ -2296,6 +2293,7 @@ form.user .btn-user {
     margin-top: 0px;
     font-weight: 400;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .table-default.table>:not(:last-child)>:last-child>* {
@@ -2396,4 +2394,31 @@ form.user .btn-user {
 
 .sub-title-b {
     color: var(--text-color);
+}
+
+.form-select {
+    font-size: 14px;
+}
+
+.all-history .form-control:focus,
+.all-history .form-select:focus {
+    border-color: var(--blue-bg)
+}
+
+.all-history .form-control {
+    font-size: 14px;
+    height: 40px;
+    padding: 8px;
+}
+
+@media (max-width: 767px) {
+    .table-responsive .dropdown-menu {
+        position: static !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .table-responsive {
+        overflow: inherit;
+    }
 }
