@@ -573,7 +573,7 @@
 
                     <div class="content-body  mb-4">
                         <div class="class-history all-history">
-                            <div class="d-md-flex justify-content-between gap-2 ">
+                            <div class=" ">
                                 <div class="search-wrapper d-flex">
                                     <div class="search-item search-icon position-relative d-inline-block">
                                         <input type="text" placeholder="Search here..." class="f-control">
@@ -590,17 +590,19 @@
                                     </button>
                                     </div>
                                 </div>
-                                <select id="multiple" class="js-states form-control">
+                                <select class="js-states form-control">
                                     <option>Java</option>
                                     <option>Javascript</option>
                                     <option>PHP</option>
                                     <option>Visual Basic</option>
                                 </select>
-                                <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
-                                    <option value="AL">Alabama</option>
-                                      ...
-                                    <option value="WY">Wyoming</option>
+                                <select id="multiple" class="js-states form-control" multiple>
+                                    <option>Java</option>
+                                    <option>Javascript</option>
+                                    <option>PHP</option>
+                                    <option>Visual Basic</option>
                                   </select>
+
                                 <!-- search-wrapper end -->
                             </div>
                             <div class="course-form all-form">
@@ -747,8 +749,20 @@
     <!--=== Main js ===-->
     <script src="assets/js/main.js "></script>
     <script>
-        $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
+        // $(document).ready(function() {
+        //     $('select').select2({
+        //         multiple: false 
+        //     });
+
+
+        // });
+    </script>
+    <script>
+        $("#multiple").select2({
+            placeholder: "Select a programming language",
+            allowClear: false,
+
+
         });
     </script>
 </body>

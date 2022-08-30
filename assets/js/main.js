@@ -38,5 +38,5 @@ $(document).ready(function($) {
         })
         //  Class History 
 
-    $('.js-example-basic-multiple').select2();
+
 }(jQuery));
