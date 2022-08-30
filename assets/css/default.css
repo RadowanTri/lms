@@ -2118,11 +2118,17 @@ form.user .btn-user {
     color: var(--text-color1);
 }
 
+.title-top-1,
 .title-top {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: var(--blue-bg);
+}
+
+.title-top-1 {
+    font-weight: 400;
+    color: var(--green-bg);
 }
 
 .model-title-top {
@@ -2351,10 +2357,11 @@ form.user .btn-user {
     border-bottom-left-radius: 5px;
 }
 
+.class-details-1 .grid-2,
 .modal-body .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
     text-align: left;
 }
 
@@ -2363,7 +2370,7 @@ form.user .btn-user {
     text-align: left;
 }
 
-.modal-body .course-form {
+.modal-body .form-bottom {
     margin-bottom: 10px;
 }
 
@@ -2400,6 +2407,7 @@ form.user .btn-user {
     font-size: 14px;
 }
 
+.modal .form-control:focus,
 .all-history .form-control:focus,
 .all-history .form-select:focus {
     border-color: var(--blue-bg)
@@ -2409,16 +2417,4 @@ form.user .btn-user {
     font-size: 14px;
     height: 40px;
     padding: 8px;
-}
-
-@media (max-width: 767px) {
-    .table-responsive .dropdown-menu {
-        position: static !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .table-responsive {
-        overflow: inherit;
-    }
 }

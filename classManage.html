@@ -387,25 +387,25 @@
                 </nav>
                 <!-- End of Topbar -->
                 <!-- Start of Container -->
-                <div class="container-fluid" id="course-history">
+                <div class="container-fluid" id="class-history">
                     <div class="content-page-header mb-4">
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="title-top">Class History</h5>
 
                             <div class="add-more-button">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="add-more-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="add-more-btn" data-bs-toggle="modal" data-bs-target="#addCourse">
                                 <img class="pe-1" src="assets/img/plus.svg" alt="plus">
-                                    Add Course  
+                                    Add Class  
                                 </button>
 
 
                                 <!-- Modal Start-->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade " id="addCourse" tabindex="-1" aria-labelledby="addCourseLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="model-title-top ms-auto" id="exampleModalLabel">Add New Course</h5>
+                                                <h5 class="model-title-top ms-auto" id="addCourseLabel">Add New Class</h5>
                                                 <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
                                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M23.4667 4.5333C18.2667 -0.666699 9.73336 -0.666699 4.53336 4.5333C-0.666638 9.7333 -0.666638 18.2666 4.53336 23.4666C9.73336 28.6666 18.1334 28.6666 23.3334 23.4666C28.5334 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7334 19.6L14 15.8666L10.2667 19.6L8.40003 17.7333L12.1334 14L8.40003 10.2666L10.2667 8.39997L14 12.1333L17.7334 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7334 19.6Z" fill="#312783"/>
@@ -415,63 +415,244 @@
                                             </div>
                                             <div class="modal-body">
                                                 <form action="">
-                                                    <div class="grid-2 ">
-                                                        <div class="course-form">
-                                                            <label for="CourseName" class="col-form-label ">
-                                                                Course Name <span class="red-star "> *</span>
-                                                            </label>
-                                                            <div class="flex-grow-1">
-                                                                <input type="text " class="form-control " id="CourseName " placeholder="Enter course name ">
+                                                    <div class="class-info">
+                                                        <h3 class="title-top-1">Course Information</h3>
+                                                        <div class="grid-2 ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for="CourseCode" class="col-form-label ">
+                                                                    Course Code <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="CourseCode " placeholder="Enter course Code ">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="course-form">
-                                                            <label for="CourseCode" class="col-form-label ">
-                                                                Course Code <span class="red-star "> *</span>
-                                                            </label>
-                                                            <div class="flex-grow-1">
-                                                                <input type="text " class="form-control " id="CourseCode " placeholder="Enter course code ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for="CourseName" class="col-form-label ">
+                                                                    Course Name <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="CourseName ">
+                                                                </div>
                                                             </div>
-                                                        </div>
 
 
+                                                        </div>
                                                     </div>
-                                                    <div class="grid-2 ">
-                                                        <div class="course-form">
-                                                            <label for="CourseHour" class="col-form-label ">
-                                                                Course Hour <span class="red-star "> *</span>
-                                                            </label>
-                                                            <div class="flex-grow-1">
-                                                                <input type="text " class="form-control " id="CourseHour " placeholder="Enter course hour ">
+                                                    <div class="class-info">
+                                                        <h3 class="title-top-1">Course Information</h3>
+                                                        <div class="grid-2 ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for=" TeacherID" class="col-form-label ">
+                                                                    Teacher ID <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id=" TeacherID " placeholder="Enter Teacher ID ">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="course-form">
-                                                            <label for="Department" class="col-form-label ">
-                                                                Department <span class="red-star "> *</span>
-                                                            </label>
-                                                            <div class="flex-grow-1">
-                                                                <select class="form-select" name="Department" id="Department">
-                                                                    <option value="">Enter course Departmen</option>
-                                                                    <option value="">CSE</option>
-                                                                    <option value="">EEE</option>
-                                                                </select>
-                                                                <!-- <input type="text " class="form-control " id="Department " placeholder="Enter course Department"> -->
+                                                            <div class="course-form form-bottom">
+                                                                <label for="TeacherName" class="col-form-label ">
+                                                                    Teacher Name </span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="TeacherName">
+                                                                </div>
                                                             </div>
-                                                        </div>
 
 
+                                                        </div>
+                                                        <div class="grid-2 ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for=" TeacherEmail" class="col-form-label ">
+                                                                    Teacher Email
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id=" TeacherEmail ">
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="TeacherName" class="col-form-label ">
+                                                                    Teacher Name
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="TeacherName">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
                                                     </div>
-                                                    <div class="grid-1">
-                                                        <div class="course-form">
-                                                            <label for="Description" class="col-form-label ">
-                                                                Course Description <span class="red-star "> *</span>
-                                                            </label>
-                                                            <div class="flex-grow-1">
-                                                                <textarea class="form-control " id="Description " placeholder="Enter Description " rows="4 "></textarea>
+                                                    <div class="class-info">
+                                                        <h3 class="title-top-1">Class Information</h3>
+                                                        <div class="grid-2 ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Session" class="col-form-label ">
+                                                                    Session <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Session* " placeholder="Enter Session ">
+                                                                </div>
                                                             </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="BatchCode" class="col-form-label ">
+                                                                    Batch Code <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="   BatchCode">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="grid-2 ">
+
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Department" class="col-form-label ">
+                                                                    Department <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <select class="form-select" name="Department" id="Department">
+                                                                        <option value="">Enter course Departmen</option>
+                                                                        <option value="">CSE</option>
+                                                                        <option value="">EEE</option>
+                                                                    </select>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Semester" class="col-form-label ">
+                                                                    Semester <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Semester" placeholder="Enter Semester ">
+                                                                </div>
+                                                            </div>
+
+
                                                         </div>
 
+                                                        <div class="grid-2 ">
+
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Section" class="col-form-label ">
+                                                                    Section <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Section " placeholder="Enter Section ">
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Day" class="col-form-label ">
+                                                                    Day <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="date " class="form-control " id="Day " placeholder="Enter Day ">
+                                                                </div>
+                                                            </div>
 
 
+                                                        </div>
+                                                        <div class="grid-2 ">
+
+                                                            <div class="course-form form-bottom">
+                                                                <label for="ClassTime" class="col-form-label ">
+                                                                    Class Time <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="time" class="form-control " id="ClassTime " placeholder="Enter Class Time ">
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="class-info">
+                                                        <h3 class="title-top-1">Class Room Information</h3>
+                                                        <div class="grid-2 ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Building" class="col-form-label ">
+                                                                    Building Name <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Building " placeholder="Enter Building ">
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="BuildingCode" class="col-form-label ">
+                                                                    Building Code <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="   Building Code" placeholder="Enter Building Code">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="grid-2 ">
+
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Floor" class="col-form-label ">
+                                                                    Floor NO <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Floor " placeholder="Enter Floor No ">
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Room" class="col-form-label ">
+                                                                    Room No <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Room " placeholder="Enter Room No">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="class-info">
+                                                        <h3 class="title-top-1">Other Information</h3>
+                                                        <div class="grid-2 ">
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Toilet" class="col-form-label ">
+                                                                    Toilet Location <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Toilet " placeholder="Enter Toilet  Location">
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Fire" class="col-form-label ">
+                                                                    Fire Exit  <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="   Building Code" placeholder="Fire Exit ">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="grid-2 ">
+
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Restaurent" class="col-form-label ">
+                                                                    Restaurent Location <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Restaurent " placeholder="Enter Restaurent Locati on">
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-form form-bottom">
+                                                                <label for="Room" class="col-form-label ">
+                                                                    Room No <span class="red-star "> *</span>
+                                                                </label>
+                                                                <div class="flex-grow-1">
+                                                                    <input type="text " class="form-control " id="Room " placeholder="Enter Room No">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
                                                     </div>
                                                     <div class="mt-3 text-end sv-canel">
                                                         <div class="d-inline-block ">
@@ -479,82 +660,6 @@
                                                             <button type="button " data-bs-dismiss="modal" class="cancel-btn ">Cancel</button>
                                                         </div>
                                                     </div>
-
-                                                    <div class="d-none">
-                                                        <div class="row no-gutter ">
-                                                            <div class="col-md-6 ">
-                                                                <div class="mb-3 row ">
-                                                                    <label for="CourseHour " class="col-sm-12 col-md-5 col-xl-4 col-form-label ">
-                                                                    Course Name <span class="red-star "> *</span>
-                                                                </label>
-                                                                    <div class="col-sm-12 col-md-7 col-xl-8 ">
-                                                                        <input type="text " class="form-control " id="CourseName " placeholder="Enter course name ">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6 ">
-                                                                <div class="mb-3 row ">
-                                                                    <label for="CourseCode " class="col-sm-12 col-md-5 col-xl-4 col-form-label ">
-                                                                    Course Code <span class="red-star "> *</span>
-                                                                </label>
-                                                                    <div class="col-sm-12 col-md-7 col-xl-8 ">
-                                                                        <input type="text " class="form-control " id="CourseCode " placeholder="Enter course code ">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row no-gutter ">
-                                                            <div class="col-md-6 ">
-                                                                <div class="mb-3 row ">
-                                                                    <label for="CourseName " class="col-sm-12 col-md-5 col-xl-4 col-form-label ">
-                                                                        Course Hour <span class="red-star "> *</span>
-                                                                    </label>
-                                                                    <div class="col-sm-12 col-md-7 col-xl-8 ">
-                                                                        <input type="text " class="form-control " id="hour " placeholder="Enter credit hour ">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6 ">
-                                                                <div class="mb-3 row ">
-                                                                    <label for="CourseName " class="col-sm-12 col-md-5 col-xl-4 col-form-label ">
-                                                                        Department <span class="red-star "> *</span>
-                                                                    </label>
-                                                                    <div class="col-sm-12 col-md-7 col-xl-8 ">
-                                                                        <input type="text " class="form-control " id="Department " placeholder="Enter Department ">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row no-gutter ">
-
-                                                            <div class="col-md-12 ">
-                                                                <div class="mb-3 row ">
-                                                                    <label for="Description " class="col-sm-12 col-md-3 col-xl-2 col-form-label ">
-                                                                            Course Description<span class="red-star "> *</span>
-                                                                        </label>
-                                                                    <div class="col-sm-12 col-md-9 col-xl-10 ">
-                                                                        <textarea class="form-control " id="Description " placeholder="Enter Description " rows="4 "></textarea>
-
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="col-md-9 offset-3 ">
-                                                            <div class="mb-3 row ">
-                                                                <div class="save-btn ">
-                                                                    <button type="button " class="save-btn ">Save</button>
-
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-
                                                 </form>
                                             </div>
 
@@ -572,14 +677,7 @@
                         <div class="class-history all-history">
                             <div class="form-wrapper">
                                 <form action="" class="form-grid-5">
-                                    <div class="tesr-purpose d-none">
 
-                                        <input type="search" class="form-control" placeholder="Search by teacher ID">
-                                        <select name="" id="" class="form-control">
-                                            <option value="1">111</option>
-                                        </select>
-
-                                    </div>
                                     <div class="search-item search-icon position-relative d-inline-block">
                                         <input type="text" placeholder="Teacher ID" class="form-control">
                                         <img src="assets/img/search-icon.png" alt="searech">
@@ -612,7 +710,7 @@
 
                                 <!-- search-wrapper end -->
                             </div>
-                            <div class="course-form all-form">
+                            <div class="course-form form-bottom all-form">
                                 <!-- Table Start -->
                                 <div class="mt-4">
                                     <div class="table-responsive">
@@ -691,7 +789,7 @@
                                                                     </svg>
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="View">
-                                                                <li><a class="dropdown-item" href="course-details.html">View Details</a></li>
+                                                                <li><a class="dropdown-item" href="class-details.html">View Details</a></li>
                                                                 <li><a class="dropdown-item" href="#">Edit </a></li>
                                                                 <li><a class="dropdown-item" href="#"> Delete</a></li>
                                                             </ul>

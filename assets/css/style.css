@@ -320,3 +320,13 @@
         width: 100%;
         margin-left: 0px;
     }
+    
+    .class-info {
+        margin-bottom: 10px;
+    }
+    
+    .building-abs img {
+        position: absolute;
+        top: -20px;
+        right: 0;
+    }
