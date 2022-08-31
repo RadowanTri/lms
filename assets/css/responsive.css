@@ -2,9 +2,8 @@
 
 @media (min-width: 1199px) {
     /* version 2 */
-    .add-more-btn,
-    .search-btn {
-        width: 150px;
+    .add-more-btn {
+        width: 160px;
     }
     .add-more-button .modal-dialog {
         max-width: 1100px;
@@ -100,6 +99,25 @@
     .building-abs {
         display: none
     }
+    .search-icon .f-control {
+        width: 250px;
+        height: 40px;
+    }
+    .table-default .table-head label {
+        white-space: nowrap;
+    }
+    .title-top-1,
+    .title-top {
+        font-size: 14px;
+    }
+    .pagination-wrapper .page-item .page-link {
+        font-size: 13px;
+    }
+    .table-default .table-text td,
+    .table-default .table-text td label,
+    .table-default .table-head label {
+        font-size: 13px;
+    }
 }
 
 
@@ -177,9 +195,12 @@
         padding-right: 30px;
         font-size: 13px;
     }
-    .add-more-btn,
+    .add-more-btn {
+        width: 140px;
+        font-size: 13px;
+    }
     .search-btn {
-        width: 120px;
+        width: 100px;
         font-size: 13px;
     }
     .add-more-button .modal-dialog {

@@ -1716,22 +1716,18 @@ thead th {
     animation: none;
 }
 
-.collapse .collapse-inner .collapse-item:hover,
+.sidebar .collapse .collapse-inner .collapse-item.active,
+.sidebar .collapse .collapse-inner .collapse-item:hover,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
     background-color: #eaecf4;
+    color: #4e73df;
 }
 
-a.nav-link[aria-expanded="true"] .collapse,
-a.nav-link[aria-expanded="true"] .collapse.show {
+.sidebar a.nav-link[aria-expanded="true"] .collapse,
+.sidebar a.nav-link[aria-expanded="true"] .collapse.show {
     background-color: #42DCA3;
     font-size: 30px;
     display: block !important;
-}
-
-.sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
-.sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-    color: #4e73df;
-    font-weight: 700;
 }
 
 
@@ -2333,7 +2329,6 @@ form.user .btn-user {
 .pagination-wrapper .page-item.active .page-link {
     color: #fff;
     box-shadow: none;
-    padding: 10px 15px;
     background-color: var(--blue-bg);
     box-shadow: none;
     border: 1px solid var(--blue-bg);
@@ -2342,7 +2337,7 @@ form.user .btn-user {
 .pagination-wrapper .page-item .page-link {
     color: #C2BDBD;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     height: 40px;
     display: flex;
     align-items: center;
@@ -2376,6 +2371,15 @@ form.user .btn-user {
 
 .apperance-none.dropdown-toggle::after {
     border: none;
+    margin-left: 0em;
+}
+
+.table-default .com-drop .apperance-none button {
+    width: 28px;
+}
+
+.table-default .com-drop .dropdown-menu {
+    min-width: 125px;
 }
 
 .com-drop li a {
@@ -2407,6 +2411,10 @@ form.user .btn-user {
     font-size: 14px;
 }
 
+.modal .course-form textarea.form-control {
+    height: initial;
+}
+
 .modal .form-control:focus,
 .all-history .form-control:focus,
 .all-history .form-select:focus {
@@ -2418,3 +2426,35 @@ form.user .btn-user {
     height: 40px;
     padding: 8px;
 }
+
+.com-drop .dropdown-item {
+    padding: 0.25rem .5rem;
+}
+
+.scrollbar::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+/* Track */
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+.scrollbar::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--blue-bg);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0.4);
+} */
