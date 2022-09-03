@@ -1516,11 +1516,12 @@ thead th {
     color: #2E3192;
 }
 
-.paid-btn,
+
+/* .paid-btn,
 .unpaid-btn {
     padding: 2px 3px;
     width: 90px;
-}
+} */
 
 .paid-btn {
     background-color: rgb(10 207 151 / 34%);
@@ -2127,6 +2128,10 @@ form.user .btn-user {
     color: var(--green-bg);
 }
 
+.blue-text {
+    color: var(--blue-bg);
+}
+
 .model-title-top {
     font-weight: 400;
     font-size: 18px;
@@ -2186,9 +2191,10 @@ form.user .btn-user {
 .search-icon img {
     position: absolute;
     right: 13px;
-    top: 10px;
+    top: 13px;
     cursor: pointer;
     color: var(--text-color1);
+    width: 17px;
 }
 
 .terms {
@@ -2352,6 +2358,13 @@ form.user .btn-user {
     border-bottom-left-radius: 5px;
 }
 
+.modal-body .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: left;
+}
+
 .class-details-1 .grid-2,
 .modal-body .grid-2 {
     display: grid;
@@ -2458,3 +2471,70 @@ form.user .btn-user {
 /* ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255, 0, 0, 0.4);
 } */
+
+.form-grid-5 {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(170px, 1fr));
+    gap: 10px;
+    /* grid-template-columns: repeat( 5, minmax(250px, 1fr) );
+*/
+}
+
+.form-grid-5 .search-btn {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.status-btn {
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.partial-btn {
+    background: #F69C0F;
+}
+
+.unpaid-btn {
+    background: #E30613;
+}
+
+.class-info .unpaid-btn {
+    height: 40px;
+}
+
+.paid-btn {
+    background: #006633;
+}
+
+.table-default th {
+    white-space: nowrap;
+}
+
+.com-tab .nav-tabs {
+    background: #ECEAFA;
+    border-radius: 5px;
+}
+
+.com-tab .nav-tabs .nav-link {
+    border: none;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    line-height: 1.5;
+    border-radius: 5px;
+    color: #858796;
+    padding: 3px 7px;
+    background: #ECEAFA;
+}
+
+.com-tab .nav-tabs .nav-item.show .nav-link,
+.com-tab .nav-tabs .nav-link.active {
+    color: var(--white-text);
+    background: var(--blue-bg);
+}
+
+.com-tab .nav-tabs .nav-link:focus,
+.com-tab .nav-tabs .nav-link:hover {
+    border-color: none;
+}
