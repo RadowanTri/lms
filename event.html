@@ -20,7 +20,7 @@
     <!--=== Style & Responsive  Css ===-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--=== Responsive Css ===-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
@@ -349,40 +349,55 @@
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
-                                </a>
+                                <a class="dropdown-item" href="#" Show <select class="f-control w-20">
+                                    <option value="1">01</option>
+                                    <option value="10">10</option>
+                                    <option value="100">100</option>
+                                    </select>
+                                    Entity
+                                    </label>
+                            </div>
+                            <div class="search-entity">
+                                <label>
+                                                Search:
+                                                <input type="text" placeholder="Search" class="f-control  w-150">
+                                            </label>
+                            </div>
+            </div>
+            <!-- show-data-e j-between End -->>
+            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
+            </a>
 
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- End of Topbar -->
-                <!-- Start of Container -->
-                <div class="container-fluid">
-                    <div class="content-page-header mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="page-title">
-                                    <a href="index.html" class="sm-none">
-                                        <i class="fas fa-th-large"></i>
-                                        <span>Dashboard</span> <span class="slash">/</span>
-                                    </a>
-                                    <a href="event.html" class="page-active">
-                                        <i class="fas fa-users"></i> <span>Events</span>
-                                    </a>
-                                </h4>
-                            </div>
-                        </div>
+        </div>
+        </li>
+        </ul>
+        </nav>
+        <!-- End of Topbar -->
+        <!-- Start of Container -->
+        <div class="container-fluid">
+            <div class="content-page-header mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="page-title">
+                            <a href="index.html" class="sm-none">
+                                <i class="fas fa-th-large"></i>
+                                <span>Dashboard</span> <span class="slash">/</span>
+                            </a>
+                            <a href="event.html" class="page-active">
+                                <i class="fas fa-users"></i> <span>Events</span>
+                            </a>
+                        </h4>
                     </div>
-                    <!-- content-page-header End-->
-                    <div class="content-body  mb-4">
-                        <div class="content_shadow">
-                            <div class="p-2">
-                                <form action="">
-                                    <div class="show-data-e j-between">
-                                        <div class="show-entity">
-                                            <label>
+                </div>
+            </div>
+            <!-- content-page-header End-->
+            <div class="content-body  mb-4">
+                <div class="content_shadow">
+                    <div class="p-2">
+                        <form action="">
+                            <div class="show-data-e j-between">
+                                <div class="show-entity">
+                                    <label>
                                                 Show
                                                 <select class="f-control w-20">
                                                     <option value="1">01</option>
@@ -391,64 +406,64 @@
                                                 </select>
                                                 Entity
                                             </label>
-                                        </div>
-                                        <div class="search-entity">
-                                            <label>
+                                </div>
+                                <div class="search-entity">
+                                    <label>
                                                 Search:
                                                 <input type="text" placeholder="Search" class="f-control  w-150">
                                             </label>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- form End -->
-                                <div class="mt-3 table-view-content">
-                                    <table class="table  table-hover">
-                                        <thead class="table-head">
-                                            <tr>
-                                                <th>Form Date</th>
-                                                <th>To Date</th>
-                                                <th>Title</th>
-                                                <th>Details</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <!-- thead End -->
-                                        <tbody class="table-body">
-                                            <tr class="table-row">
-                                                <td data-label="Form Date">12/12/2021</td>
-                                                <td data-label="To Date">01/01/2022</td>
-                                                <td data-label="Title">Lorem ipsum dolor sit amet consectetur</td>
-                                                <td data-label="Details">
-                                                    <p class="max-width-40 text-truncate">
-                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo!
-                                                    </p>
-                                                </td>
-                                                <td data-label="Action">
-                                                    <div class="cariculam-c">
-                                                        <a href="#" class="btn btn-sky-bg download-btn mr-lg-2  mb-sm-10">
-                                                            <i class="fas fa-download pe-2"></i><span>Download</span>
-                                                        </a>
-                                                        <a href="#" class="btn blue-h-bg  text-white">
-                                                            <i class="fas fa-eye pe-2"></i><span>View</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- tr End -->
-                                        </tbody>
-                                        <!-- tbody End -->
-                                    </table>
                                 </div>
-                                <!-- table-view-content -->
                             </div>
+                        </form>
+                        <!-- form End -->
+                        <div class="mt-3 table-view-content">
+                            <table class="table  table-hover">
+                                <thead class="table-head">
+                                    <tr>
+                                        <th>Form Date</th>
+                                        <th>To Date</th>
+                                        <th>Title</th>
+                                        <th>Details</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <!-- thead End -->
+                                <tbody class="table-body">
+                                    <tr class="table-row">
+                                        <td data-label="Form Date">12/12/2021</td>
+                                        <td data-label="To Date">01/01/2022</td>
+                                        <td data-label="Title">Lorem ipsum dolor sit amet consectetur</td>
+                                        <td data-label="Details">
+                                            <p class="max-width-40 text-truncate">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo!
+                                            </p>
+                                        </td>
+                                        <td data-label="Action">
+                                            <div class="cariculam-c">
+                                                <a href="#" class="btn btn-sky-bg download-btn mr-lg-2  mb-sm-10">
+                                                    <i class="fas fa-download pe-2"></i><span>Download</span>
+                                                </a>
+                                                <a href="#" class="btn blue-h-bg  text-white">
+                                                    <i class="fas fa-eye pe-2"></i><span>View</span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- tr End -->
+                                </tbody>
+                                <!-- tbody End -->
+                            </table>
                         </div>
-                        <!-- content_shadow End -->
+                        <!-- table-view-content -->
                     </div>
-                    <!-- content-body End -->
                 </div>
-                <!-- End of Container -->
+                <!-- content_shadow End -->
             </div>
-            <!-- End of Sidebar -->
+            <!-- content-body End -->
+        </div>
+        <!-- End of Container -->
+        </div>
+        <!-- End of Sidebar -->
         </div>
         <!-- contentWrapper End -->
     </section>

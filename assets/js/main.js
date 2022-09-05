@@ -39,4 +39,8 @@ $(document).ready(function($) {
         //  Class History 
 
 
+    function feesStuEdit2() {
+        $("#feesStuEdit2").modal();
+    }
+
 }(jQuery));
