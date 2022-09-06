@@ -21,13 +21,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--=== Responsive Css ===-->
     <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 
 <body class="sidebar-toggled">
     <!-- Page Wrapper -->
     <section id="wrapper">
-        <!-- Sidebar Start -->
+        <!-- Sidebar Start-->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -47,10 +46,8 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-
                 <a class="nav-link" data-bs-toggle="collapse" href="#User" role="button" aria-expanded="false" aria-controls="User">
                     <i class="fas fa-university"></i>
                     <span>User</span>
@@ -89,7 +86,7 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="course1.html">
                     <i class="fas fa-user"></i>
                     <span>Course</span>
@@ -164,21 +161,20 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" data-bs-toggle="collapse" href="#Accounting" role="button" aria-expanded="false" aria-controls="Accounting">
                     <i class="fas fa-book-reader"></i>
                     <span>Payment Manage</span>
                 </a>
-                <div id="Accounting" class="collapse">
+                <div id="Accounting" class="collapse show">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="fee.html">Fee List</a>
                         <a class="collapse-item" href="feesCollection.html">All Fees Collection</a>
                         <a class="collapse-item" href="expense.html">Expense</a>
-                        <a class="collapse-item" href="wallet.html">Wallet</a>
+                        <a class="collapse-item active" href="wallet.html">Wallet</a>
                     </div>
                 </div>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
@@ -233,26 +229,24 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                     <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle me-2">
+                  <i class="fa fa-bars"></i>
+                  </button>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
-
                         <!-- Nav Item - Notification -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">3+</span>
                             </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <ul class="dropdown-list dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
                                 <h6 class="dropdown-header">
                                     Notification
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
+                                    <div class="me-2">
                                         <div class="icon-circle bg-primary">
                                             <i class="fas fa-file-alt text-white"></i>
                                         </div>
@@ -263,7 +257,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
+                                    <div class="me-2">
                                         <div class="icon-circle bg-success">
                                             <i class="fas fa-donate text-white"></i>
                                         </div>
@@ -274,7 +268,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
+                                    <div class="me-2">
                                         <div class="icon-circle bg-warning">
                                             <i class="fas fa-exclamation-triangle text-white"></i>
                                         </div>
@@ -285,22 +279,21 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Notification</a>
-                            </div>
+                            </ul>
                         </li>
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="messagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                            <ul class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
                                     Message Center
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <div class="dropdown-list-image me-2">
                                         <img class="rounded-circle" src="assets/img/undraw_profile_1.svg" alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
@@ -310,7 +303,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <div class="dropdown-list-image me-2">
                                         <img class="rounded-circle" src="assets/img/undraw_profile_2.svg" alt="">
                                         <div class="status-indicator"></div>
                                     </div>
@@ -320,7 +313,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <div class="dropdown-list-image me-2">
                                         <img class="rounded-circle" src="assets/img/undraw_profile_3.svg" alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
@@ -330,196 +323,780 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
+                            </ul>
                         </li>
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="me-2 d-none d-lg-inline text-gray-600 small">Radowan Bhuiyan</span>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2  d-none d-lg-inline text-gray-600"> Time Research & Innovation</span>
                                 <img class="img-profile rounded-circle" src="assets/img/undraw_profile.svg">
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <ul class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i> Profile
+                                    <i class="fas fa-user fa-sm fa-fw me-2  text-gray-400"></i> Profile
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i> Settings
+                                    <i class="fas fa-cogs fa-sm fa-fw me-2  text-gray-400"></i> Settings
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i> Activity Log
+                                    <i class="fas fa-list fa-sm fa-fw me-2  text-gray-400"></i> Activity Log
                                 </a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw me-2  text-gray-400"></i> Logout
                                 </a>
-
-                            </div>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
                 <!-- End of Topbar -->
                 <!-- Start of Container -->
-                <div class="container-fluid">
+                <div class="container-fluid" id="fees-collection">
                     <div class="content-page-header mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="page-title">
-                                    <a href="index.html" class="sm-none"><i class="fas fa-th-large"></i> <span>Dashboard</span> <span class="slash">/</span> </a>
-                                    <a href="wallet.html" class="page-active"> <i class="fas fa-users"></i> <span>Wallet</span> </a>
-
-                                </h4>
-                            </div>
-                            <!-- end card body-->
-                        </div>
+                        <h5 class="title-top">Payment History</h5>
                     </div>
-                    <div class="content-body wallet  mb-4">
-                        <div class="content_shadow">
-                            <div class="grid-auto">
-                                <div class="t-amount apple-bg p-2">
-                                    <h6>Total Amount</h6>
-                                    <h4>$500</h4>
-                                </div>
-                                <div class="t-amount apple-bg p-2">
-                                    <h6>Total Amount</h6>
-                                    <h4>$500</h4>
-                                </div>
-                                <div class="t-amount apple-bg p-2">
-                                    <h6>Total Amount</h6>
-                                    <h4>$500</h4>
-                                </div>
-                                <div class="t-amount apple-bg p-2">
-                                    <h6>Total Amount</h6>
-                                    <h4>$500</h4>
-                                </div>
-
+                    <!-- content-page-header End -->
+                    <div class="content-body  mb-4">
+                        <div class="wallet-history">
+                            <div class="content-page-header mb-4">
+                                <h5 class="title-top">Payment History</h5>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="content-body  mt-5">
+                        <!-- wallet-history End  -->
 
-                        <div class="money-transfer money-transfer-form-body">
+                        <div class="payment-history all-history">
+                            <!-- add-fee navs Start-->
+                            <div class="payment-wrapper mb-4">
+                                <div class="com-tab">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="Transfer-tab" data-bs-toggle="tab" data-bs-target="#Transfer" type="button" role="tab" aria-controls="Transfer" aria-selected="true">Transfer Money</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="Cash-tab" data-bs-toggle="tab" data-bs-target="#Cash" type="button" role="tab" aria-controls="Cash" aria-selected="false">Cash Money</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="Online-tab" data-bs-toggle="tab" data-bs-target="#Online" type="button" role="tab" aria-controls="Online" aria-selected="false">Online</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="Request-tab" data-bs-toggle="tab" data-bs-target="#Request" type="button" role="tab" aria-controls="Request" aria-selected="false">Request Money</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- com-tab End-->
+                                <div class="mt-4">
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="Transfer" role="tabpanel" aria-labelledby="Transfer-tab">
+                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                                <form action="">
+                                                    <div class="text-center my-2">
+                                                        <h5 class="model-title-top">
+                                                            Money Transfer From
+                                                        </h5>
+                                                    </div>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Amount" class="col-form-label">
+                                                                Money Transfer <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Amount" placeholder="Enter Amount">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Currency" class="col-form-label">
+                                                                Currency<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Currency" placeholder="Enter Currency">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
 
-                            <div class="view-all">
-                                <ul class="nav nav-pills mb-3 p-2" id="pills-tab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link blue-bg active" id="transfer-tab" data-toggle="pill" href="#transfer" role="tab" aria-controls="transfer" aria-selected="true">
-                                            Transfer Money
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link purple-bg" id="request-tab" data-toggle="pill" href="#request" role="tab" aria-controls="request" aria-selected="false">
-                                            Request Money
-                                        </a>
-                                    </li>
-                                </ul>
+                                                    <!-- grid-2 End -->
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Charge" class="col-form-label">
+                                                                Charge(1.55%)+100 <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Charge" placeholder="Enter Charge">
+                                                            </div>
 
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade  show active content_shadow" id="transfer" role="tabpanel" aria-labelledby="transfer-tab">
-                                        <div class="form-title bg-black">
-                                            <h6>Money Transfer Form</h6>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Department" class="col-form-label">
+                                                                Account NO <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Charge" placeholder="Enter Reciver Account NO">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+
+                                                    <!-- grid-2 End -->
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Payment Type
+                                                            </label>
+                                                            <div class="flex-grow-1">
+
+                                                                <select class="form-select" name="" id="">
+                                                                    <option value="">Salary </option>
+                                                                    <option value="">Loan </option>
+                                                                    <option value="">Purchase </option>
+                                                                    <option value="">Advance </option>
+                                                                    <option value="">Other </option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Short" class="col-form-label">
+                                                                Short Notes 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Short" placeholder="Short Notes ">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Email 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Email" placeholder="Enter Email">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Department" class="col-form-label">
+                                                                Employee ID <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="ID" placeholder="Employee ID">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="mt-3 text-end">
+                                                        <div class="d-inline-block">
+                                                            <button type="button" class="save-btn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- sv-cancel End -->
+                                                </form>
+                                            </div>
+                                            <!-- box-shadow-10 End -->
                                         </div>
+                                        <!-- tab-pane End -->
+                                        <div class="tab-pane fade" id="Cash" role="tabpanel" aria-labelledby="Cash-tab">
+                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                                <form action="">
+                                                    <div class="text-center my-2">
+                                                        <h5 class="model-title-top">
+                                                            Cash Amount From
+                                                        </h5>
+                                                    </div>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Amount" class="col-form-label">
+                                                                Cash Amount<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Amount" placeholder="Enter Amount">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Currency" class="col-form-label">
+                                                                Currency<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Currency" placeholder="Enter Currency">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
 
-                                        <form action="" class="form-money">
-                                            <div class="row wallet-form">
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Amount Transfer</label>
-                                                    <input type="number" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Currency</label>
-                                                    <select id="inputState" class="form-control">
-                                                        <option selected=""></option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Charge ( 1.55% )+100</label>
-                                                    <input type="number" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Receiver Account Number</label>
-                                                    <input type="number" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Email</label>
-                                                    <input type="email" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Short Notes</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                                                </div>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Payment Type
+                                                            </label>
+                                                            <div class="flex-grow-1">
+
+                                                                <select class="form-select" name="" id="">
+                                                                    <option value="">Salary </option>
+                                                                    <option value="">Loan </option>
+                                                                    <option value="">Purchase </option>
+                                                                    <option value="">Advance </option>
+                                                                    <option value="">Other </option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Short" class="col-form-label">
+                                                                Short Notes 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Short" placeholder="Short Notes ">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Email 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Email" placeholder="Enter Email">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Department" class="col-form-label">
+                                                                Employee ID <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="ID" placeholder="Employee ID">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="mt-3 text-end">
+                                                        <div class="d-inline-block">
+                                                            <button type="button" class="save-btn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- sv-cancel End -->
+                                                </form>
                                             </div>
+                                            <!-- box-shadow-10 End -->
 
-                                            <div class="mt-4 text-center">
-                                                <button type="submit" class="btn apple-bg text-white">Submt</button>
-                                            </div>
-
-                                        </form>
-
-                                    </div>
-                                    <!-- table-view-content -->
-
-                                    <div class="tab-pane fade show content_shadow" id="request" role="tabpanel" aria-labelledby="request-tab">
-                                        <div class="form-title bg-black">
-                                            <h6>Request For Money</h6>
                                         </div>
+                                        <!-- tab-pane End -->
+                                        <div class="tab-pane fade" id="Online" role="tabpanel" aria-labelledby="Online-tab">
+                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                                <form action="">
+                                                    <div class="text-center my-2">
+                                                        <h5 class="model-title-top">
+                                                            Online Amount From
+                                                        </h5>
+                                                    </div>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Amount" class="col-form-label">
+                                                                Online Amount<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Amount" placeholder="Enter Amount">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Currency" class="col-form-label">
+                                                                Currency<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Currency" placeholder="Enter Currency">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
 
-                                        <form action="" class="form-money">
-                                            <div class="row wallet-form">
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Amount Transfer</label>
-                                                    <input type="number" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Currency</label>
-                                                    <select id="inputState" class="form-control">
-                                                        <option selected=""></option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Charge ( 1.55% )+100</label>
-                                                    <input type="number" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Receiver Account Number</label>
-                                                    <input type="number" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Email</label>
-                                                    <input type="email" class="form-control">
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 mb-2">
-                                                    <label class="input-label label-txt">Short Notes</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                                                </div>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Payment Type
+                                                            </label>
+                                                            <div class="flex-grow-1">
+
+                                                                <select class="form-select" name="" id="">
+                                                                    <option value="">Salary </option>
+                                                                    <option value="">Loan </option>
+                                                                    <option value="">Purchase </option>
+                                                                    <option value="">Advance </option>
+                                                                    <option value="">Other </option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Short" class="col-form-label">
+                                                                Short Notes 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Short" placeholder="Short Notes ">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Email 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Email" placeholder="Enter Email">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Department" class="col-form-label">
+                                                                Employee ID <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="ID" placeholder=" Employee ID">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="mt-3 text-end">
+                                                        <div class="d-inline-block">
+                                                            <button type="button" class="save-btn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- sv-cancel End -->
+                                                </form>
                                             </div>
+                                            <!-- box-shadow-10 End -->
+                                        </div>
+                                        <!-- tab-pane End -->
+                                        <div class="tab-pane fade" id="Request" role="tabpanel" aria-labelledby="Request-tab">
+                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                                <form action="">
+                                                    <div class="text-center my-2">
+                                                        <h5 class="model-title-top">
+                                                            Request Money From
+                                                        </h5>
+                                                    </div>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Amount" class="col-form-label">
+                                                                Request Money<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Amount" placeholder="Enter Amount">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Currency" class="col-form-label">
+                                                                Request Account No<span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Currency" placeholder="Request Account No">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
 
-                                            <div class="mt-4 text-center">
-                                                <button type="submit" class="btn apple-bg text-white">Submt</button>
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Payment Type
+                                                            </label>
+                                                            <div class="flex-grow-1">
+
+                                                                <select class="form-select" name="" id="">
+                                                                    <option value="">Salary </option>
+                                                                    <option value="">Loan </option>
+                                                                    <option value="">Purchase </option>
+                                                                    <option value="">Advance </option>
+                                                                    <option value="">Other </option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Short" class="col-form-label">
+                                                                Short Notes 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Short" placeholder="Short Notes ">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="grid-2">
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Email" class="col-form-label">
+                                                                Email 
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="Email" placeholder="Enter Email">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                        <div class="course-form form-bottom">
+                                                            <label for="Department" class="col-form-label">
+                                                                Employee ID <span class="red-star"> *</span>
+                                                            </label>
+                                                            <div class="flex-grow-1">
+                                                                <input type="text" class="form-control" id="ID" placeholder="Employee ID">
+                                                            </div>
+                                                        </div>
+                                                        <!-- course-form End -->
+                                                    </div>
+                                                    <!-- grid-2 End -->
+                                                    <div class="mt-3 text-end">
+                                                        <div class="d-inline-block">
+                                                            <button type="button" class="save-btn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- sv-cancel End -->
+                                                </form>
                                             </div>
-
-                                        </form>
-
+                                            <!-- box-shadow-10 End -->
+                                        </div>
+                                        <!-- tab-pane End -->
                                     </div>
-
-
+                                    <!-- tab-content End -->
                                 </div>
+
                             </div>
+                            <!-- add-fee navs End-->
+                        </div>
+                        <!-- fees-collection all-history End-->
+                        <div class="course-table form-bottom all-form">
 
 
                         </div>
+                        <!-- course-table form-bottom all-form End -->
                     </div>
-                    <!-- End of Container -->
+                    <!-- content-body End -->
                 </div>
             </div>
-            <!-- End of Sidebar -->
+            <!-- End of Container -->
         </div>
-    </section>
+        <!-- contentWrapper End -->
 
+        <!-- Student Edit Modal Start  -->
+        <div class="add-more-button">
+            <!-- Modal One Start-->
+            <div class="modal fade" id="StuFeeEdit" tabindex="-1" aria-labelledby="StuFeeEditLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="model-title-top ms-auto" id="StuFeeEditLabel">
+                                Add Student Fee
+                            </h5>
+                            <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.4667 4.5333C18.2667 -0.666699 9.73336 -0.666699 4.53336 4.5333C-0.666638 9.7333 -0.666638 18.2666 4.53336 23.4666C9.73336 28.6666 18.1334 28.6666 23.3334 23.4666C28.5334 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7334 19.6L14 15.8666L10.2667 19.6L8.40003 17.7333L12.1334 14L8.40003 10.2666L10.2667 8.39997L14 12.1333L17.7334 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7334 19.6Z" fill="#312783"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- modal-header End -->
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="class-info">
+                                    <h3 class="title-top-1">Student Information</h3>
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for="StudentID" class="col-form-label">  
+                                        Student ID
+                                        <span class="red-star"> *</span> 
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="StudentID" placeholder="Enter Student ID">
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                        <div class="course-form form-bottom">
+                                            <label for="Name" class="col-form-label"> 
+                                        Name <span class="red-star"> *</span>
+                                     </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="Name">
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                    </div>
+                                    <!-- grid-2 End -->
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for=" BatchCode" class="col-form-label"> 
+                                                Batch Code
+                                            </label>
+                                            <div class="flex-grow-1">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control" id="BatchCode">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                        <div class="course-form form-bottom">
+                                            <label for="Department" class="col-form-label"> 
+                                                Department
+                                            </label>
+                                            <div class="flex-grow-1">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control" id="Department">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                    </div>
+                                    <!-- grid-2 End -->
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for=" Semester" class="col-form-label"> 
+                                        Semester
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control" id="Semester">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                        <div class="course-form form-bottom">
+                                            <label for="Section" class="col-form-label"> 
+                                        Section
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control" id="Section">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                    </div>
+                                    <!-- grid-2 End -->
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for=" Email" class="col-form-label"> 
+                                        Email
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control" id="Email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                        <div class="course-form form-bottom">
+                                            <label for="Section" class="col-form-label"> 
+                                        Mobile 
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <div class="flex-grow-1">
+                                                    <input type="text" class="form-control" id="Mobile">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                    </div>
+                                    <!-- grid-2 End -->
+                                </div>
+                                <!-- class-info End -->
+                                <div class="class-info">
+                                    <h3 class="title-top-1">Fees Information</h3>
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for="FeesName" class="col-form-label"> 
+                                        Fees Name<span class="red-star"> *</span> 
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="FeesName" placeholder="Enter Fees Name">
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                        <div class="course-form form-bottom">
+                                            <label for="Amount" class="col-form-label"> 
+                                        Amount<span class="red-star"> *</span> 
+                                    </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="Name" placeholder="Enter Amount">
+                                            </div>
+                                        </div>
+                                        <!-- course-form End -->
+                                    </div>
+                                    <!-- grid End -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn-transparent" data-bs-toggle="modal" data-bs-target="#feemodalTwo"> 
+                                        <img src="assets/img/plus-1.svg" alt=" plus"> 
+                                        <span class="ms-2 title-top-1 blue-text">
+                                            Add new fees
+                                        </span> 
+                                    </button>
+
+                                </div>
+                                <!-- class-info End -->
+                                <div class="class-info">
+                                    <h3 class="title-top-1">Fees Information</h3>
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for="Day" class="col-form-label"> Day <span class="red-star"> *</span> </label>
+                                            <div class="flex-grow-1">
+                                                <input type="date" class="form-control" id="Day" placeholder="Enter Day"> </div>
+                                        </div>
+                                        <div class="course-form form-bottom d-flex align-items-end  justify-content-between gap-2">
+
+                                            <div class="d-inline-block">
+                                                <label for="Status" class="col-form-label d-block"> Status<span class="red-star"> *</span> </label>
+                                                <select name="" id="Status" class="form-select">
+                                            <option value="">Cashly Online</option>
+                                            <option value=""> Online</option>
+                                            <option value=""> Transfer</option>
+                                        </select>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="text-start">
+                                                    <h5 class="title-top-1">
+                                                        <span class="blue-text me-1">Total  Amount:</span>TK 50000.00
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for="OnlineAmount" class="col-form-label"> Online Amount <span class="red-star"> *</span> </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="OnlineAmount" placeholder="Enter Online Amount"> </div>
+                                        </div>
+                                        <div class="course-form form-bottom">
+                                            <label for="Due" class="col-form-label"> Due Amount <span class="red-star"> *</span> </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="Due" placeholder="Enter Due Amount">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- class-info End -->
+                                <div class="class-info">
+                                    <h3 class="title-top-1">Bank Information</h3>
+
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for="TransactionID" class="col-form-label"> Transaction ID <span class="red-star"> *</span> </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="OnlineAmount" placeholder="Enter Transaction ID"> </div>
+                                        </div>
+                                        <div class="course-form form-bottom">
+                                            <label for="AccountNo" class="col-form-label"> Account No <span class="red-star"> *</span> </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="AccountNo" placeholder="Enter Account No">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-2">
+                                        <div class="course-form form-bottom">
+                                            <label for="BankName" class="col-form-label"> Bank ame<span class="red-star"> *</span> </label>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="BankName" placeholder="Enter Bank Name"> </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- class-info End -->
+                            </form>
+                            <div class="mt-3 text-end sv-canel">
+                                <div class="d-inline-block">
+                                    <button type="button" class="save-btn mr-20">Save</button>
+                                    <button type="button" data-bs-dismiss="modal" class="cancel-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal-body End -->
+                    </div>
+                </div>
+                <!-- modal-dialog End-->
+            </div>
+            <!-- Modal One End-->
+            <!-- Modal Two Start -->
+            <div class="modal  fade feemodalTwo" id="feemodalTwo" tabindex="-1" aria-labelledby="feemodalTwoLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="model-title-top ms-auto" id="feemodalTwoLabel">Add New Fee</h5>
+                            <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.4667 4.5333C18.2667 -0.666699 9.73336 -0.666699 4.53336 4.5333C-0.666638 9.7333 -0.666638 18.2666 4.53336 23.4666C9.73336 28.6666 18.1334 28.6666 23.3334 23.4666C28.5334 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7334 19.6L14 15.8666L10.2667 19.6L8.40003 17.7333L12.1334 14L8.40003 10.2666L10.2667 8.39997L14 12.1333L17.7334 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7334 19.6Z" fill="#312783" /> 
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- modal-header End-->
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="course-form form-bottom  d-flex align-items-center">
+                                    <label class="col-form-label"> Fees ID No </label>
+                                    <h5 class="title-top-1 ms-2">0021</h5>
+                                </div>
+                                <div class="grid-2">
+                                    <div class="course-form form-bottom">
+                                        <label for="FeesName" class="col-form-label"> Fees Name<span class="red-star"> *</span> </label>
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control" id="FeesName" placeholder="Enter fees name"> </div>
+                                    </div>
+                                    <div class="course-form form-bottom">
+                                        <label for="Amount" class="col-form-label"> Amount <span class="red-star"> *</span> </label>
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control" id="Amount" placeholder="Enter  Amount"> </div>
+                                    </div>
+                                </div>
+                                <div class="grid-2">
+                                    <div class="course-form form-bottom">
+                                        <label for="Department*" class="col-form-label"> Department<span class="red-star"> *</span> </label>
+                                        <div class="flex-grow-1">
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control" id="Amount" placeholder="Enter  Amount"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="course-form form-bottom">
+                                        <label for="Description" class="col-form-label"> Description <span class="red-star"> *</span> </label>
+                                        <div class="flex-grow-1">
+                                            <textarea class="form-control" id="Description" placeholder="Enter Description" rows="2" spellcheck="false"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 text-end sv-canel">
+                                    <div class="d-inline-block">
+                                        <button type="button" class="save-btn mr-20">Save</button>
+                                        <button type="button" data-bs-dismiss="modal" class="cancel-btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- modal-body End-->
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Two End-->
+        </div>
+        <!-- Student Edit Modal End  -->
+    </section>
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->

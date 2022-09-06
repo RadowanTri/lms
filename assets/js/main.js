@@ -38,9 +38,10 @@ $(document).ready(function($) {
         })
         //  Class History 
 
-
-    function feesStuEdit2() {
-        $("#feesStuEdit2").modal();
-    }
+    $(function() {
+        $('#modalClose').on('click', function() {
+            $(".modal").modal('hide');
+        })
+    })
 
 }(jQuery));
