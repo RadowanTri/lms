@@ -318,3 +318,65 @@
         right: 0;
     }
     /* fee-collection */
+    /* Wallet page */
+    
+    .wallet-m {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        padding: 5px;
+    }
+    
+    .wallet-m.wallet-circle {
+        left: 52%;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+    
+    .wallet-content .wal-img img {
+        display: block;
+        width: -webkit-fill-available;
+        width: fill-available;
+    }
+    
+    .wallet-c::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 1px;
+        height: 13px;
+        width: 13px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        box-shadow: 0px 5px 12px rgba(156, 136, 251, 0.16);
+    }
+    
+    .wallet-c:nth-child(1):before {
+        background: linear-gradient(180deg, #312783 0%, #8D79F6 100%);
+    }
+    
+    .wallet-c:nth-child(2):before {
+        background: linear-gradient(180deg, #006633 0%, #61F2AA 100%);
+    }
+    
+    .wallet-c:nth-child(3):before {
+        background: linear-gradient(180deg, #E30613 0%, #B7686C 100%);
+        box-shadow: 0px 5px 12px rgba(156, 136, 251, 0.16)
+    }
+    /* User */
+    
+    .role-edits .terms label {
+        color: var(--text-color);
+    }
+    
+    .role-edits .terms {
+        position: relative;
+        text-align: left;
+    }

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--=== Responsive Css ===-->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body class="sidebar-toggled">
@@ -54,9 +55,8 @@
                 </a>
                 <div id="User" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Admin1</a>
-                        <a class="collapse-item" href="#">Admin2</a>
-                        <a class="collapse-item" href="#">Admin3</a>
+                        <a class="collapse-item" href="manageuser.html">Manage User</a>
+                        <a class="collapse-item" href="rolepermission.html">Role Permission</a>
                     </div>
                 </div>
             </li>
@@ -353,21 +353,78 @@
                 <!-- Start of Container -->
                 <div class="container-fluid" id="fees-collection">
                     <div class="content-page-header mb-4">
-                        <h5 class="title-top">Payment History</h5>
+                        <h5 class="title-top">Wallet History</h5>
                     </div>
                     <!-- content-page-header End -->
-                    <div class="content-body  mb-4">
-                        <div class="wallet-history">
-                            <div class="content-page-header mb-4">
-                                <h5 class="title-top">Payment History</h5>
+                    <div class="content-body ">
+                        <div class="wallet-history mb-4">
+
+                            <div class="grid-4-auto">
+                                <div class="wallet-content position-relative">
+                                    <div class="wallet-m">
+                                        <h5 class="f-15-b">Total Balance</h5>
+                                        <p class="f-16 text-white mt-2">TK-50000000</p>
+                                    </div>
+                                    <div class="wal-img">
+                                        <img src="assets/img/total.png" alt="total">
+                                    </div>
+                                </div>
+                                <!-- wallet-content End -->
+                                <div class="wallet-content position-relative">
+                                    <div class="wallet-m">
+                                        <h5 class="f-15-b">Income</h5>
+                                        <p class="f-16 text-white mt-2">TK-5000000</p>
+                                    </div>
+                                    <div class="wal-img">
+                                        <img src="assets/img/income.png" alt="Income">
+                                    </div>
+                                </div>
+                                <!-- wallet-content End -->
+                                <div class="wallet-content position-relative">
+                                    <div class="wallet-m">
+                                        <h5 class="f-15-b">Expense</h5>
+                                        <p class="f-16 text-white mt-2">TK-5000000</p>
+                                    </div>
+                                    <div class="wal-img">
+                                        <img src="assets/img/expense.png" alt="expense">
+                                    </div>
+                                </div>
+                                <!-- wallet-content End -->
+                                <div class="wallet-content position-relative">
+                                    <div class="wallet-m wallet-circle">
+                                        <div class="wallet-c total-c position-relative mb-1">
+                                            <h5 class="f-14">Total Balance</h5>
+                                            <p class="f-12 blue-text ">TK-200000</p>
+                                        </div>
+                                        <div class="wallet-c income-c position-relative mb-1">
+                                            <h5 class="f-14">Total Income</h5>
+                                            <p class="f-12 blue-text ">TK-200000</p>
+                                        </div>
+                                        <div class="wallet-c expense-c position-relative mb-1">
+                                            <h5 class="f-14">Total Expense </h5>
+                                            <p class="f-12 blue-text ">TK-20000</p>
+                                        </div>
+                                    </div>
+                                    <div class="wal-img">
+                                        <img class="img-fluid" src="assets/img/cricle-w.png" alt="cricle">
+
+                                    </div>
+
+                                </div>
+                                <!-- wallet-content End -->
+
                             </div>
+
                         </div>
                         <!-- wallet-history End  -->
 
                         <div class="payment-history all-history">
+                            <div class="content-page-header mb-4">
+                                <h5 class="title-top">Payment History</h5>
+                            </div>
                             <!-- add-fee navs Start-->
                             <div class="payment-wrapper mb-4">
-                                <div class="com-tab">
+                                <div class="com-tab d-inline-block">
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" id="Transfer-tab" data-bs-toggle="tab" data-bs-target="#Transfer" type="button" role="tab" aria-controls="Transfer" aria-selected="true">Transfer Money</button>
@@ -387,14 +444,14 @@
                                 <div class="mt-4">
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="Transfer" role="tabpanel" aria-labelledby="Transfer-tab">
-                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                            <div class="box-shadow-10 p-2 p-lg-3">
                                                 <form action="">
                                                     <div class="text-center my-2">
                                                         <h5 class="model-title-top">
                                                             Money Transfer From
                                                         </h5>
                                                     </div>
-                                                    <div class="grid-2">
+                                                    <div class="grid-2 ">
                                                         <div class="course-form form-bottom">
                                                             <label for="Amount" class="col-form-label">
                                                                 Money Transfer <span class="red-star"> *</span>
@@ -498,11 +555,11 @@
                                                     <!-- sv-cancel End -->
                                                 </form>
                                             </div>
-                                            <!-- box-shadow-10 End -->
+                                            <!-- box-shadow-10 p-3End -->
                                         </div>
                                         <!-- tab-pane End -->
                                         <div class="tab-pane fade" id="Cash" role="tabpanel" aria-labelledby="Cash-tab">
-                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                            <div class="box-shadow-10 p-3p-md-3 p-lg-4 ">
                                                 <form action="">
                                                     <div class="text-center my-2">
                                                         <h5 class="model-title-top">
@@ -590,12 +647,12 @@
                                                     <!-- sv-cancel End -->
                                                 </form>
                                             </div>
-                                            <!-- box-shadow-10 End -->
+                                            <!-- box-shadow-10 p-3End -->
 
                                         </div>
                                         <!-- tab-pane End -->
                                         <div class="tab-pane fade" id="Online" role="tabpanel" aria-labelledby="Online-tab">
-                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                            <div class="box-shadow-10 p-3p-md-3 p-lg-4 ">
                                                 <form action="">
                                                     <div class="text-center my-2">
                                                         <h5 class="model-title-top">
@@ -683,11 +740,11 @@
                                                     <!-- sv-cancel End -->
                                                 </form>
                                             </div>
-                                            <!-- box-shadow-10 End -->
+                                            <!-- box-shadow-10 p-3End -->
                                         </div>
                                         <!-- tab-pane End -->
                                         <div class="tab-pane fade" id="Request" role="tabpanel" aria-labelledby="Request-tab">
-                                            <div class="box-shadow-10 p-lg-4 p-md-3">
+                                            <div class="box-shadow-10 p-3p-md-3 p-lg-4 ">
                                                 <form action="">
                                                     <div class="text-center my-2">
                                                         <h5 class="model-title-top">
@@ -775,7 +832,7 @@
                                                     <!-- sv-cancel End -->
                                                 </form>
                                             </div>
-                                            <!-- box-shadow-10 End -->
+                                            <!-- box-shadow-10 p-3End -->
                                         </div>
                                         <!-- tab-pane End -->
                                     </div>
@@ -799,303 +856,7 @@
         </div>
         <!-- contentWrapper End -->
 
-        <!-- Student Edit Modal Start  -->
-        <div class="add-more-button">
-            <!-- Modal One Start-->
-            <div class="modal fade" id="StuFeeEdit" tabindex="-1" aria-labelledby="StuFeeEditLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="model-title-top ms-auto" id="StuFeeEditLabel">
-                                Add Student Fee
-                            </h5>
-                            <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23.4667 4.5333C18.2667 -0.666699 9.73336 -0.666699 4.53336 4.5333C-0.666638 9.7333 -0.666638 18.2666 4.53336 23.4666C9.73336 28.6666 18.1334 28.6666 23.3334 23.4666C28.5334 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7334 19.6L14 15.8666L10.2667 19.6L8.40003 17.7333L12.1334 14L8.40003 10.2666L10.2667 8.39997L14 12.1333L17.7334 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7334 19.6Z" fill="#312783"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- modal-header End -->
-                        <div class="modal-body">
-                            <form action="">
-                                <div class="class-info">
-                                    <h3 class="title-top-1">Student Information</h3>
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for="StudentID" class="col-form-label">  
-                                        Student ID
-                                        <span class="red-star"> *</span> 
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="StudentID" placeholder="Enter Student ID">
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                        <div class="course-form form-bottom">
-                                            <label for="Name" class="col-form-label"> 
-                                        Name <span class="red-star"> *</span>
-                                     </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="Name">
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                    </div>
-                                    <!-- grid-2 End -->
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for=" BatchCode" class="col-form-label"> 
-                                                Batch Code
-                                            </label>
-                                            <div class="flex-grow-1">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control" id="BatchCode">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                        <div class="course-form form-bottom">
-                                            <label for="Department" class="col-form-label"> 
-                                                Department
-                                            </label>
-                                            <div class="flex-grow-1">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control" id="Department">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                    </div>
-                                    <!-- grid-2 End -->
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for=" Semester" class="col-form-label"> 
-                                        Semester
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control" id="Semester">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                        <div class="course-form form-bottom">
-                                            <label for="Section" class="col-form-label"> 
-                                        Section
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control" id="Section">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                    </div>
-                                    <!-- grid-2 End -->
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for=" Email" class="col-form-label"> 
-                                        Email
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control" id="Email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                        <div class="course-form form-bottom">
-                                            <label for="Section" class="col-form-label"> 
-                                        Mobile 
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <div class="flex-grow-1">
-                                                    <input type="text" class="form-control" id="Mobile">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                    </div>
-                                    <!-- grid-2 End -->
-                                </div>
-                                <!-- class-info End -->
-                                <div class="class-info">
-                                    <h3 class="title-top-1">Fees Information</h3>
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for="FeesName" class="col-form-label"> 
-                                        Fees Name<span class="red-star"> *</span> 
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="FeesName" placeholder="Enter Fees Name">
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                        <div class="course-form form-bottom">
-                                            <label for="Amount" class="col-form-label"> 
-                                        Amount<span class="red-star"> *</span> 
-                                    </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="Name" placeholder="Enter Amount">
-                                            </div>
-                                        </div>
-                                        <!-- course-form End -->
-                                    </div>
-                                    <!-- grid End -->
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn-transparent" data-bs-toggle="modal" data-bs-target="#feemodalTwo"> 
-                                        <img src="assets/img/plus-1.svg" alt=" plus"> 
-                                        <span class="ms-2 title-top-1 blue-text">
-                                            Add new fees
-                                        </span> 
-                                    </button>
 
-                                </div>
-                                <!-- class-info End -->
-                                <div class="class-info">
-                                    <h3 class="title-top-1">Fees Information</h3>
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for="Day" class="col-form-label"> Day <span class="red-star"> *</span> </label>
-                                            <div class="flex-grow-1">
-                                                <input type="date" class="form-control" id="Day" placeholder="Enter Day"> </div>
-                                        </div>
-                                        <div class="course-form form-bottom d-flex align-items-end  justify-content-between gap-2">
-
-                                            <div class="d-inline-block">
-                                                <label for="Status" class="col-form-label d-block"> Status<span class="red-star"> *</span> </label>
-                                                <select name="" id="Status" class="form-select">
-                                            <option value="">Cashly Online</option>
-                                            <option value=""> Online</option>
-                                            <option value=""> Transfer</option>
-                                        </select>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <div class="text-start">
-                                                    <h5 class="title-top-1">
-                                                        <span class="blue-text me-1">Total  Amount:</span>TK 50000.00
-                                                    </h5>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for="OnlineAmount" class="col-form-label"> Online Amount <span class="red-star"> *</span> </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="OnlineAmount" placeholder="Enter Online Amount"> </div>
-                                        </div>
-                                        <div class="course-form form-bottom">
-                                            <label for="Due" class="col-form-label"> Due Amount <span class="red-star"> *</span> </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="Due" placeholder="Enter Due Amount">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- class-info End -->
-                                <div class="class-info">
-                                    <h3 class="title-top-1">Bank Information</h3>
-
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for="TransactionID" class="col-form-label"> Transaction ID <span class="red-star"> *</span> </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="OnlineAmount" placeholder="Enter Transaction ID"> </div>
-                                        </div>
-                                        <div class="course-form form-bottom">
-                                            <label for="AccountNo" class="col-form-label"> Account No <span class="red-star"> *</span> </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="AccountNo" placeholder="Enter Account No">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-2">
-                                        <div class="course-form form-bottom">
-                                            <label for="BankName" class="col-form-label"> Bank ame<span class="red-star"> *</span> </label>
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="BankName" placeholder="Enter Bank Name"> </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- class-info End -->
-                            </form>
-                            <div class="mt-3 text-end sv-canel">
-                                <div class="d-inline-block">
-                                    <button type="button" class="save-btn mr-20">Save</button>
-                                    <button type="button" data-bs-dismiss="modal" class="cancel-btn">Cancel</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- modal-body End -->
-                    </div>
-                </div>
-                <!-- modal-dialog End-->
-            </div>
-            <!-- Modal One End-->
-            <!-- Modal Two Start -->
-            <div class="modal  fade feemodalTwo" id="feemodalTwo" tabindex="-1" aria-labelledby="feemodalTwoLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="model-title-top ms-auto" id="feemodalTwoLabel">Add New Fee</h5>
-                            <button type="button" class="btn-transparent" data-bs-dismiss="modal" aria-label="Close">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23.4667 4.5333C18.2667 -0.666699 9.73336 -0.666699 4.53336 4.5333C-0.666638 9.7333 -0.666638 18.2666 4.53336 23.4666C9.73336 28.6666 18.1334 28.6666 23.3334 23.4666C28.5334 18.2666 28.6667 9.7333 23.4667 4.5333ZM17.7334 19.6L14 15.8666L10.2667 19.6L8.40003 17.7333L12.1334 14L8.40003 10.2666L10.2667 8.39997L14 12.1333L17.7334 8.39997L19.6 10.2666L15.8667 14L19.6 17.7333L17.7334 19.6Z" fill="#312783" /> 
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- modal-header End-->
-                        <div class="modal-body">
-                            <form action="">
-                                <div class="course-form form-bottom  d-flex align-items-center">
-                                    <label class="col-form-label"> Fees ID No </label>
-                                    <h5 class="title-top-1 ms-2">0021</h5>
-                                </div>
-                                <div class="grid-2">
-                                    <div class="course-form form-bottom">
-                                        <label for="FeesName" class="col-form-label"> Fees Name<span class="red-star"> *</span> </label>
-                                        <div class="flex-grow-1">
-                                            <input type="text" class="form-control" id="FeesName" placeholder="Enter fees name"> </div>
-                                    </div>
-                                    <div class="course-form form-bottom">
-                                        <label for="Amount" class="col-form-label"> Amount <span class="red-star"> *</span> </label>
-                                        <div class="flex-grow-1">
-                                            <input type="text" class="form-control" id="Amount" placeholder="Enter  Amount"> </div>
-                                    </div>
-                                </div>
-                                <div class="grid-2">
-                                    <div class="course-form form-bottom">
-                                        <label for="Department*" class="col-form-label"> Department<span class="red-star"> *</span> </label>
-                                        <div class="flex-grow-1">
-                                            <div class="flex-grow-1">
-                                                <input type="text" class="form-control" id="Amount" placeholder="Enter  Amount"> </div>
-                                        </div>
-                                    </div>
-                                    <div class="course-form form-bottom">
-                                        <label for="Description" class="col-form-label"> Description <span class="red-star"> *</span> </label>
-                                        <div class="flex-grow-1">
-                                            <textarea class="form-control" id="Description" placeholder="Enter Description" rows="2" spellcheck="false"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-3 text-end sv-canel">
-                                    <div class="d-inline-block">
-                                        <button type="button" class="save-btn mr-20">Save</button>
-                                        <button type="button" data-bs-dismiss="modal" class="cancel-btn">Cancel</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- modal-body End-->
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Two End-->
-        </div>
-        <!-- Student Edit Modal End  -->
     </section>
 
     <!--=== All Plugin ===-->

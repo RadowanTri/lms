@@ -55,9 +55,8 @@
                 </a>
                 <div id="User" class="collapse">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Admin1</a>
-                        <a class="collapse-item" href="#">Admin2</a>
-                        <a class="collapse-item" href="#">Admin3</a>
+                        <a class="collapse-item" href="manageuser.html">Manage User</a>
+                        <a class="collapse-item" href="rolepermission.html">Role Permission</a>
                     </div>
                 </div>
             </li>
@@ -232,25 +231,24 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                     <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle me-2">
+                  <i class="fa fa-bars"></i>
+                  </button>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Nav Item - Notification -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">3+</span>
                             </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <ul class="dropdown-list dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
                                 <h6 class="dropdown-header">
                                     Notification
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
+                                    <div class="me-2">
                                         <div class="icon-circle bg-primary">
                                             <i class="fas fa-file-alt text-white"></i>
                                         </div>
@@ -261,7 +259,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
+                                    <div class="me-2">
                                         <div class="icon-circle bg-success">
                                             <i class="fas fa-donate text-white"></i>
                                         </div>
@@ -272,7 +270,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
+                                    <div class="me-2">
                                         <div class="icon-circle bg-warning">
                                             <i class="fas fa-exclamation-triangle text-white"></i>
                                         </div>
@@ -283,22 +281,21 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Notification</a>
-                            </div>
+                            </ul>
                         </li>
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="messagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                            <ul class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
                                     Message Center
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <div class="dropdown-list-image me-2">
                                         <img class="rounded-circle" src="assets/img/undraw_profile_1.svg" alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
@@ -308,7 +305,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <div class="dropdown-list-image me-2">
                                         <img class="rounded-circle" src="assets/img/undraw_profile_2.svg" alt="">
                                         <div class="status-indicator"></div>
                                     </div>
@@ -318,7 +315,7 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
+                                    <div class="dropdown-list-image me-2">
                                         <img class="rounded-circle" src="assets/img/undraw_profile_3.svg" alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
@@ -328,76 +325,58 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
+                            </ul>
                         </li>
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Radowan Bhuiyan</span>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2  d-none d-lg-inline text-gray-600"> Time Research & Innovation</span>
                                 <img class="img-profile rounded-circle" src="assets/img/undraw_profile.svg">
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <ul class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
+                                    <i class="fas fa-user fa-sm fa-fw me-2  text-gray-400"></i> Profile
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Settings
+                                    <i class="fas fa-cogs fa-sm fa-fw me-2  text-gray-400"></i> Settings
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Activity Log
+                                    <i class="fas fa-list fa-sm fa-fw me-2  text-gray-400"></i> Activity Log
                                 </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" Show <select class="f-control w-20">
-                                    <option value="1">01</option>
-                                    <option value="10">10</option>
-                                    <option value="100">100</option>
-                                    </select>
-                                    Entity
-                                    </label>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw me-2  text-gray-400"></i> Logout
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+                <!-- Start of Container -->
+                <div class="container-fluid">
+                    <div class="content-page-header mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="page-title">
+                                    <a href="index.html" class="sm-none">
+                                        <i class="fas fa-th-large"></i>
+                                        <span>Dashboard</span> <span class="slash">/</span>
+                                    </a>
+                                    <a href="event.html" class="page-active">
+                                        <i class="fas fa-users"></i> <span>Events</span>
+                                    </a>
+                                </h4>
                             </div>
-                            <div class="search-entity">
-                                <label>
-                                                Search:
-                                                <input type="text" placeholder="Search" class="f-control  w-150">
-                                            </label>
-                            </div>
-            </div>
-            <!-- show-data-e j-between End -->>
-            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
-            </a>
-
-        </div>
-        </li>
-        </ul>
-        </nav>
-        <!-- End of Topbar -->
-        <!-- Start of Container -->
-        <div class="container-fluid">
-            <div class="content-page-header mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="page-title">
-                            <a href="index.html" class="sm-none">
-                                <i class="fas fa-th-large"></i>
-                                <span>Dashboard</span> <span class="slash">/</span>
-                            </a>
-                            <a href="event.html" class="page-active">
-                                <i class="fas fa-users"></i> <span>Events</span>
-                            </a>
-                        </h4>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- content-page-header End-->
-            <div class="content-body  mb-4">
-                <div class="content_shadow">
-                    <div class="p-2">
-                        <form action="">
-                            <div class="show-data-e j-between">
-                                <div class="show-entity">
-                                    <label>
+                    <!-- content-page-header End-->
+                    <div class="content-body  mb-4">
+                        <div class="content_shadow">
+                            <div class="p-2">
+                                <form action="">
+                                    <div class="show-data-e j-between">
+                                        <div class="show-entity">
+                                            <label>
                                                 Show
                                                 <select class="f-control w-20">
                                                     <option value="1">01</option>
@@ -406,64 +385,64 @@
                                                 </select>
                                                 Entity
                                             </label>
-                                </div>
-                                <div class="search-entity">
-                                    <label>
+                                        </div>
+                                        <div class="search-entity">
+                                            <label>
                                                 Search:
                                                 <input type="text" placeholder="Search" class="f-control  w-150">
                                             </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- form End -->
+                                <div class="mt-3 table-view-content">
+                                    <table class="table  table-hover">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Form Date</th>
+                                                <th>To Date</th>
+                                                <th>Title</th>
+                                                <th>Details</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- thead End -->
+                                        <tbody class="table-body">
+                                            <tr class="table-row">
+                                                <td data-label="Form Date">12/12/2021</td>
+                                                <td data-label="To Date">01/01/2022</td>
+                                                <td data-label="Title">Lorem ipsum dolor sit amet consectetur</td>
+                                                <td data-label="Details">
+                                                    <p class="max-width-40 text-truncate">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo!
+                                                    </p>
+                                                </td>
+                                                <td data-label="Action">
+                                                    <div class="cariculam-c">
+                                                        <a href="#" class="btn btn-sky-bg download-btn mr-lg-2  mb-sm-10">
+                                                            <i class="fas fa-download pe-2"></i><span>Download</span>
+                                                        </a>
+                                                        <a href="#" class="btn blue-h-bg  text-white">
+                                                            <i class="fas fa-eye pe-2"></i><span>View</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- tr End -->
+                                        </tbody>
+                                        <!-- tbody End -->
+                                    </table>
                                 </div>
+                                <!-- table-view-content -->
                             </div>
-                        </form>
-                        <!-- form End -->
-                        <div class="mt-3 table-view-content">
-                            <table class="table  table-hover">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>Form Date</th>
-                                        <th>To Date</th>
-                                        <th>Title</th>
-                                        <th>Details</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <!-- thead End -->
-                                <tbody class="table-body">
-                                    <tr class="table-row">
-                                        <td data-label="Form Date">12/12/2021</td>
-                                        <td data-label="To Date">01/01/2022</td>
-                                        <td data-label="Title">Lorem ipsum dolor sit amet consectetur</td>
-                                        <td data-label="Details">
-                                            <p class="max-width-40 text-truncate">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo!
-                                            </p>
-                                        </td>
-                                        <td data-label="Action">
-                                            <div class="cariculam-c">
-                                                <a href="#" class="btn btn-sky-bg download-btn mr-lg-2  mb-sm-10">
-                                                    <i class="fas fa-download pe-2"></i><span>Download</span>
-                                                </a>
-                                                <a href="#" class="btn blue-h-bg  text-white">
-                                                    <i class="fas fa-eye pe-2"></i><span>View</span>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <!-- tr End -->
-                                </tbody>
-                                <!-- tbody End -->
-                            </table>
                         </div>
-                        <!-- table-view-content -->
+                        <!-- content_shadow End -->
                     </div>
+                    <!-- content-body End -->
                 </div>
-                <!-- content_shadow End -->
+                <!-- End of Container -->
             </div>
-            <!-- content-body End -->
-        </div>
-        <!-- End of Container -->
-        </div>
-        <!-- End of Sidebar -->
+            <!-- End of Sidebar -->
         </div>
         <!-- contentWrapper End -->
     </section>

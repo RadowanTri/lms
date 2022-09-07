@@ -2,9 +2,6 @@
 
 @media (min-width: 1199px) {
     /* version 2 */
-    .add-more-btn {
-        width: 175px;
-    }
     .add-more-button .modal-dialog {
         max-width: 1100px;
     }
@@ -74,6 +71,11 @@
     .add-more-button .modal-dialog {
         max-width: 760px;
     }
+    .grid-3,
+    .grid-4,
+    .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
@@ -118,6 +120,15 @@
     .table-default .table-head label {
         font-size: 13px;
     }
+    .f-15-b {
+        font-weight: 500;
+    }
+    .f-16 {
+        font-size: 14px;
+    }
+    .mb-4 {
+        margin-bottom: 1rem;
+    }
 }
 
 
@@ -139,6 +150,12 @@
     }
     #content-wrapper .card-body {
         padding: 1rem;
+    }
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5 {
+        grid-template-columns: repeat(1, 1fr);
     }
     .table-view-content .table .table-head {
         display: none;
@@ -225,10 +242,6 @@
     .order-list-left li,
     .order-list-right li {
         font-size: 13px;
-    }
-    .grid-4 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
     }
     .mb-sm-10 {
         margin-bottom: 10px;
