@@ -1248,6 +1248,10 @@ r
     border-color: #fff;
 }
 
+.btn-facebook:hover {
+    color: #fff;
+}
+
 .btn-block {
     display: block;
     width: 100%;
@@ -1330,20 +1334,21 @@ r
 }
 
 .select-view>h3 {
-    font-size: 18px;
+    font-size: 17px;
     padding-bottom: 15px;
+    font-weight: 500;
 }
 
 .blue-bg {
-    background: #6C63FF;
+    background: #6C63FF !important;
 }
 
 .sky-bg {
-    background: #04BFBF;
+    background: #04BFBF !important;
 }
 
 .purple-bg {
-    background: #620F9A;
+    background: #620F9A !important;
 }
 
 .view-all ul.nav li {
@@ -1360,16 +1365,6 @@ r
     position: relative;
     display: inline-block;
 }
-
-
-/* .checked-action .nav-link {
-padding: 5px;
-border-r.table-view-content adius: 50%;
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
--ms-border-radius: 50%;
--o-border-radius: 50%;
-} */
 
 thead th {
     border-bottom: 0px solid #dee2e6;
@@ -2593,5 +2588,14 @@ form.user .btn-user {
 }
 
 .col-form-label {
+    font-size: 14px;
+}
+
+.breadcrumb-header .breadcrumb-item.active {
+    color: #3a3b45;
+}
+
+.table-view-content thead th {
+    font-weight: 500;
     font-size: 14px;
 }
