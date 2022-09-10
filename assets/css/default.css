@@ -1992,16 +1992,13 @@ thead th {
     width: 2.5rem;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 991px) {
     .sidebar .nav-item .collapse {
         position: absolute;
         left: calc(6.5rem + 1.5rem/ 2);
         z-index: 1;
         top: 2px;
     }
-}
-
-@media (max-width: 991px) {
     .sidebar.toggled {
         width: 0!important;
         overflow: hidden;
@@ -2031,13 +2028,20 @@ thead th {
         width: 6.5rem;
     }
     .sidebar .nav-item .nav-link span {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         display: block;
     }
     .sidebar .nav-item .nav-link i {
         margin-right: 0;
     }
-    .sidebar .nav-item .nav-link[data-bs-toggle="collapse"]::after {
+    /* .sidebar .nav-item .nav-link[data-bs-toggle="collapse"]::after {
+        display: none;
+    } */
+    .sidebar .nav-item .nav-link[aria-expanded="true"]::after,
+    .sidebar .nav-item .nav-link[aria-expanded="false"]::after {
+        position: absolute;
+        top: 33px;
+        right: 0px;
         display: none;
     }
     .sidebar .sidebar-brand .sidebar-brand-icon i {

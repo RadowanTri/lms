@@ -90,8 +90,24 @@
         display: inline-block;
     }
     /* job */
+    .catagory_area .popular_search {
+        flex-direction: column;
+    }
+    .catagory_area .popular_search ul {
+        margin-top: 10px;
+    }
     .catagory_area .popular_search ul li {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+    }
+    .popular_catagory_area .h3,
+    .popular_catagory_area h3 {
+        font-size: calc(1rem + .3vw);
+    }
+    .popular_catagory_area .single_catagory a h4 {
+        font-size: 16px;
+    }
+    .popular_catagory_area .single_catagory p span {
+        font-size: 15px;
     }
     .class-details-1 .grid-2,
     .modal-body .grid-2 {
@@ -128,6 +144,86 @@
     }
     .mb-4 {
         margin-bottom: 1rem;
+    }
+    /* 10//09 */
+    /* responsice check css  */
+    .topbar .user-top .dropdown-list {
+        width: 10rem !important;
+    }
+    .topbar .nav-item .nav-link {
+        height: 3rem;
+    }
+    .dropdown-menu[data-bs-popper] {
+        right: 0;
+        left: auto;
+    }
+    .topbar .nav-item .nav-link {
+        height: 3rem;
+    }
+    .topbar .dropdown-list .dropdown-header {
+        font-size: 0.875rem;
+    }
+    .dropdown-item span {
+        font-size: .875em;
+    }
+    .icon-circle {
+        height: 2rem;
+        width: 2rem;
+    }
+    .card .h5 {
+        font-size: .875rem;
+    }
+    .fa-2x.text-gray-300 {
+        font-size: 22px;
+    }
+    .breadcrumb-header .breadcrumb-item,
+    p,
+    .font-16 {
+        font-size: .875rem;
+    }
+    .save-btn,
+    .cancel-btn,
+    .delete-btn,
+    .add-more-btn,
+    .search-btn,
+    .table-view-content th,
+    .table-view-content td,
+    .table-view-content thead,
+    .table-view-content tr,
+    .form-select,
+    .btn,
+    .add-more-button .form-select,
+    .add-more-button .form-control,
+    .add-more-button .col-form-label {
+        font-size: 13px;
+    }
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item {
+        font-size: 13px;
+    }
+    .model-title-top {
+        font-size: 16px;
+    }
+    .view-all li,
+    .terms1 label,
+    .terms label {
+        font-size: 13px;
+    }
+    .select-view>h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    h5,
+    .h5 {
+        font-size: 1rem;
+    }
+    h6,
+    .h6 {
+        font-size: .9rem;
+    }
+    .f-control,
+    .all-history .form-control {
+        font-size: 13px;
+        padding: 6px;
     }
 }
 
@@ -203,8 +299,7 @@
         margin-top: 10px;
     }
     /* version 2 */
-    .sidebar .nav-item .collapse .collapse-inner .collapse-item,
-    .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+    .sidebar .nav-item .collapse .collapse-inner .collapse-item {
         padding: 0.3rem 0.3rem;
         font-size: 13px;
     }
@@ -251,4 +346,5 @@
     .search-btn {
         margin-left: 10px;
     }
+    /* responsive check */
 }

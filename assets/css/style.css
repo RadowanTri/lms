@@ -373,6 +373,7 @@
     }
     /* User */
     
+    .add-more-button .terms label,
     .role-edits .terms label {
         color: var(--text-color);
     }

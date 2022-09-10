@@ -27,21 +27,4 @@ $(document).ready(function($) {
         };
     });
 
-
-
-
-    $('.dropdown-toggle').dropdown()
-
-    var myCollapsible = document.getElementById('myCollapsible')
-    myCollapsible.addEventListener('hidden.bs.collapse', function() {
-            // do something...
-        })
-        //  Class History 
-
-    $(function() {
-        $('#modalClose').on('click', function() {
-            $(".modal").modal('hide');
-        })
-    })
-
 }(jQuery));
