@@ -1018,7 +1018,7 @@ r
 }
 
 .text-xs {
-    font-size: .7rem;
+    font-size: .85rem
 }
 
 .text-gray-800 {
@@ -1231,7 +1231,7 @@ r
 }
 
 .text-xs {
-    font-size: .7rem;
+    font-size: .85rem
 }
 
 .text-lg {
@@ -1240,6 +1240,10 @@ r
 
 .btn-block {
     margin-top: 0.5rem;
+}
+
+.card .h5 {
+    font-size: 1rem;
 }
 
 .btn-facebook {
