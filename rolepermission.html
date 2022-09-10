@@ -367,7 +367,7 @@
                     <div class="breadcrumb-header mb-4">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb content_shadow">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="inde">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Role Permission</li>
                             </ol>
                         </nav>
@@ -399,73 +399,157 @@
                                         <!-- modal-header End -->
                                         <div class="modal-body">
                                             <form action="">
-                                                <div class="grid-2">
-                                                    <div class="course-form form-bottom  d-flex align-items-center">
-                                                        <label class="col-form-label"> Serial No </label>
-                                                        <h5 class="title-top ms-2">0021</h5>
-                                                    </div>
-                                                    <!-- course-form End -->
+                                                <div class="course-form form-bottom  d-flex align-items-center">
+                                                    <label class="col-form-label"> Fees ID No </label>
+                                                    <h5 class="title-top-1 ms-2">0021</h5>
                                                 </div>
-                                                <!-- grid-2 End -->
-
-                                                <!-- grid-2 End -->
-                                                <div class="grid-2">
-
-                                                    <div class="course-form form-bottom">
-                                                        <label for="UserType" class="col-form-label">
-                                                            User Type <span class="red-star"> *</span>
-                                                        </label>
-                                                        <div class="flex-grow-1">
-                                                            <select id="UserType" class="form-select">
-                                                                <option value="">
-                                                                    Select User Type
-                                                                </option>
-                                                                <option value="">
-                                                                    Admim
-                                                                </option>
-                                                                <option value="">
-                                                                    Manager
-                                                                </option>
-                                                                <option value="">
-                                                                    Editor   
-                                                                </option>
-                                                            </select>
+                                                <div class="grid-1 mb-2">
+                                                    <div class="terms">
+                                                        <input type="checkbox" id="select">
+                                                        <label for="select">Select All</label>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-4-auto">
+                                                    <div class="check-box">
+                                                        <div class="terms">
+                                                            <input type="checkbox" id="Students">
+                                                            <label for="Students">Students</label>
+                                                        </div>
+                                                        <div class="terms-all ml-25">
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewStudents">
+                                                                <label for="ViewStudents">View Student</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="EditStudents">
+                                                                <label for="EditStudents">Edit Student</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="DeleteStudents">
+                                                                <label for="Delete Students">Delete Student</label>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <!-- course-form End -->
-                                                    <div class="course-form form-bottom">
-                                                        <label for="Role" class="col-form-label">
-                                                            Role Type <span class="red-star"> *</span>
-                                                        </label>
-                                                        <div class="flex-grow-1">
-                                                            <select id="Role" class="form-select">
-                                                                <option value="">
-                                                                    Select Role
-                                                                </option>
-                                                               
-                                                                <option value="">
-                                                                    Teacher
-                                                                </option>
-                                                                <option value="">
-                                                                    Student
-                                                                </option>
-                                                                <option value="">
-                                                                    Others  
-                                                                </option> 
-                                                            </select>
+                                                    <div class="check-box">
+                                                        <div class="terms">
+                                                            <input type="checkbox" id="Teacher">
+                                                            <label for="Teacher">Teacher</label>
+                                                        </div>
+                                                        <div class="terms-all ml-25">
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewTeacher">
+                                                                <label for="ViewTeacher">View Student</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="EditTeacher">
+                                                                <label for="EditTeacher">Edit Teacher</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="DeleteTeacher">
+                                                                <label for="DeleteTeacher">Delete Teacher</label>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <!-- course-form End -->
-                                                </div>
+                                                    <div class="check-box">
+                                                        <div class="terms">
+                                                            <input type="checkbox" id="Parents">
+                                                            <label for="Parents">Parents</label>
+                                                        </div>
+                                                        <div class="terms-all ml-25">
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewParents">
+                                                                <label for="ViewParents">View Parents</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="EditParents">
+                                                                <label for="EditParents">Edit Parents</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="DeleteParents">
+                                                                <label for="DeleteParents">Delete Parents</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check-box">
+                                                        <div class="terms">
+                                                            <input type="checkbox" id="Course">
+                                                            <label for="Course">Course </label>
+                                                        </div>
+                                                        <div class="terms-all ml-25">
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewCourse">
+                                                                <label for="ViewCourse">View Course</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewCourse">
+                                                                <label for="ViewCourse">Add Course</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="EditCourse">
+                                                                <label for="EditCourse">Edit Course </label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="DeleteCourse">
+                                                                <label for="DeleteCourse">Delete Course </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check-box">
+                                                        <div class="terms">
+                                                            <input type="checkbox" id="Class ">
+                                                            <label for="Class">Class Manage</label>
+                                                        </div>
+                                                        <div class="terms-all ml-25">
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewClass">
+                                                                <label for="ViewClass">View Class</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="ViewClass">
+                                                                <label for="ViewClass">Add Class</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="EditClass">
+                                                                <label for="EditClass">Edit Class </label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="DeleteClass">
+                                                                <label for="DeleteClass">Delete Class </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check-box">
+                                                        <div class="terms">
+                                                            <input type="checkbox" id="Payment">
+                                                            <label for="Payment">Payment Manage</label>
+                                                        </div>
+                                                        <div class="terms-all ml-25">
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="FeesList">
+                                                                <label for="FeesList">Fees List</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="FeesListAll">
+                                                                <label for="FeesListAll">All Fees Collection</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="Expense">
+                                                                <label for="Expense">Expense</label>
+                                                            </div>
+                                                            <div class="terms">
+                                                                <input type="checkbox" id="Walet">
+                                                                <label for="Walet">Walet</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                                <!-- grid-2 End -->
+                                                </div>
                                                 <div class="mt-3 text-end sv-canel">
                                                     <div class="d-inline-block">
                                                         <button type="button" class="save-btn mr-20">Save</button>
                                                         <button type="button" data-bs-dismiss="modal" class="cancel-btn">Cancel</button>
                                                     </div>
                                                 </div>
-                                                <!-- sv-cancel End -->
                                             </form>
                                         </div>
                                         <!-- modal-body End-->
